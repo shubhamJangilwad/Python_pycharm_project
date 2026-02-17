@@ -1,5 +1,5 @@
 import mysql.connector
-from Scripts.pywin32_postinstall import root_key_name
+
 
 conn = mysql.connector.connect(
     host ="localhost",
