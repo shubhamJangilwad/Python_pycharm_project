@@ -1,15 +1,13 @@
-with open("contains.txt","a+") as f:
-    for i in range(6):
-        a = input("Enter str:")
-        f.write(a + "\n")
+# do this type program regularly
+with open("contains.txt","w") as f:
+    for i in range(1,11):
+        f.write(str(i)+"\n")
+
 
 with open("contains.txt","r") as f:
-    dict = {}
-    for i in f.readlines():
-        if i in dict:
-            dict[i] += 1
-        else:
-            dict[i] = 1
+    data = f.readlines()
 
-    for i,k in dict.items():
-        print(i,k)
+    for line in data:
+        x = int(line.strip()) # it removes the \n or spaces between lines
+        if x % 2 ==0:
+            print(x)
