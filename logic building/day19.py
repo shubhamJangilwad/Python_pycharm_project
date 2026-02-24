@@ -84,7 +84,9 @@ for i in data:
         data2.append(i)
 print(data2+data1)
 
+from day18 import add_numbers
 
+print(add_numbers([1,2,3,4,5,6,7]))
 
 
 

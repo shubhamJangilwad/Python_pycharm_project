@@ -59,3 +59,10 @@ for i in range(len(c)-1):
         count = 1
 print(c[-1]+str(count))
 
+
+def add_numbers(n):
+    add = 0
+    for i in n:
+        add += i
+    return add
+
