@@ -90,3 +90,19 @@ print(add_numbers([1,2,3,4,5,6,7]))
 
 
 
+# Recursive Function :
+
+def sum_n(n):
+    if n == 0:
+        return 0
+    return n + sum_n(n-1)
+
+print(sum_n(5))
+
+
+x = 10
+def f():
+    print(x)
+    x = 5
+f() # not run because we are not assign  value x before print
+
