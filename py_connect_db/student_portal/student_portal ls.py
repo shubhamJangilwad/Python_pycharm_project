@@ -26,3 +26,5 @@ else:
 
 print("Welcome", result[3])
 print("Course:", result[4])
+
+conn.close()
