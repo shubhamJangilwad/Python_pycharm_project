@@ -1,10 +1,10 @@
-# class Car:
-#     brand = "maruti suzuki"
-#     price = 120000
-#
-# c1 = Car()
-# print(c1.brand)
-# print(c1.price)
+class Car:
+    brand = "maruti suzuki"
+    price = 120000
+
+c1 = Car()
+print(c1.brand)
+print(c1.price)
 
 class Book:
     def __init__(self,title,price):
@@ -23,9 +23,6 @@ c1 = Employee()
 c2 = Employee()
 print(c1.company,c2.salary)
 print(c2.company,c2.salary)
-
-
-
 
 
 class Student:
