@@ -271,15 +271,30 @@ for char in string:
 #     if i % 2 == 0:
 #         print(i)
 
-s = int(input("Enter numbers"))
-reverse = 0
-l = 0
-while s > 0:
-    last = s % 10
-    l += last
-    s = s // 10
+# s = int(input("Enter numbers"))
+# reverse = 0
+# l = 0
+# while s > 0:
+#     last = s % 10
+#     l += last
+#     s = s // 10
+#
+# print(l)
 
-print(l)
 
 
+user = int(input("Enter a number: "))
+if user > 0:
+    print("positive")
+else:
+    print("negative")
 
+for i in range(1,11):
+    print(i)
+
+for i in range(1,11):
+    print("5 * ", str(i),"=",5*i)
+
+for i in range(1,21):
+    if i % 2 == 0:
+        print(i)
