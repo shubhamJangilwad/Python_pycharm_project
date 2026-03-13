@@ -1,18 +1,19 @@
-from flask import Flask , render_template
+from flask import Flask , render_template , request , redirect , url_for
 
 app = Flask(__name__)
+
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("form.html")
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
+@app.route("/submit", methods=["POST"])
+def submit():
+    city = request.form["city"]
+    return redirect(url_for("result",city=city))
 
-@app.route("/student")
-def student():
-    return render_template("student.html", name = "Shubham", marks = 85)
-
+@app.route("/result/<city>")
+def result(city):
+    return "you entered: "+ city
 
 
 if __name__ == "__main__":
