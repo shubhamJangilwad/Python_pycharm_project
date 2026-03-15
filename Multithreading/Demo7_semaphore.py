@@ -3,11 +3,11 @@ import time
 
 sem = threading.Semaphore(3)
 
-def task(name):
+def task(num):
     sem.acquire()
-    print(name, "entered")
+    print(num, "entered")
     time.sleep(4)
-    print(name, "leaving")
+    print(num, "leaving")
     time.sleep(2)
     sem.release()
 
